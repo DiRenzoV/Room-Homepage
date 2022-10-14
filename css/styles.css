@@ -15,12 +15,182 @@
 
 html { font-size: 62.5%; }
 
+/* img { width: 100%; } */
 
 body {
   font-family: 'League Spartan', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
+  line-height: 1;
 }
+
+/* --- Typography --- */
+
+
+.header {
+  font-size: 3.2rem;
+  margin: 2rem 0;
+}
+
+.body-text {
+  font-size: 1.45rem;
+  color: var(--dark-gray);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.link {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+.arrow {
+  width: 4rem;
+  transition: transform 250ms;
+}
+
+.link:hover .arrow {
+  transform: translateX(10px);
+}
+
+
+.block-slider__slide {
+  padding: 5rem 3rem;
+}
+
+/* --- hero --- */
+
+.hero {
+  height: 360px;
+  position: relative;
+}
+
+/* --- Nav --- */
+.nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  padding: 3rem 2rem;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.logo {
+  margin: auto;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: white;
+  padding: 2rem 1rem; 
+  position: absolute;
+  top: -100%;
+  right: 0;
+  left: 0;
+}
+
+/* ---  List  --- */
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.list__item a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+  margin: 0 1rem;
+}
+
+/* --- Slider --- */
+
+.slider {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.slider__track-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.slider__track {
+  width: 100%;
+  height: 100%;
+  transition: transform 300ms;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+/* --- Buttons --- */
+.slider__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.btn img {
+  width: 1rem;
+}
+
+.btn {
+  border: 0;
+  background-color: transparent;
+  padding: 1rem 1.8rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* --- block-slider --- */
+
+.block-slider__container {
+  height: 360px;
+  overflow: hidden;
+}
+
+.block-slider__track {
+  position: relative;
+  height: 100%;
+  transition: transform 350ms;
+  transition-timing-function: cubic-bezier(1,.27,0,1.26);
+  transition-delay: 80ms;
+}
+
+.block-slider__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
 
 /* --- Attribution --- */
 

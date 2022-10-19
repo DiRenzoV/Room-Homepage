@@ -24,12 +24,23 @@ body {
   line-height: 1;
 }
 
+
+
 /* --- Typography --- */
 
 
 .header {
   font-size: 3.2rem;
   margin: 2rem 0;
+  text-shadow: 0 0 1px var(--black);
+}
+
+.heading {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 1px var(--black)
 }
 
 .body-text {
@@ -42,11 +53,10 @@ body {
 .link {
   color: var(--black);
   font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: 8px;
+  font-size: 1.6rem;
+  letter-spacing: 12px;
   text-transform: uppercase;
   text-decoration: none;
-
 }
 
 .arrow {
@@ -59,8 +69,25 @@ body {
 }
 
 
-.block-slider__slide {
-  padding: 5rem 3rem;
+
+
+@media screen and ( min-width: 1440px ) {
+  .header {
+    font-size: 5rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .body-text {
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+  }
+
+  .link {
+    font-size: 2.5rem;
+  }
 }
 
 /* --- hero --- */
@@ -68,6 +95,12 @@ body {
 .hero {
   height: 360px;
   position: relative;
+}
+
+@media screen and ( min-width: 1440px ) {
+  .hero {
+    height: 100%
+  }
 }
 
 /* --- Nav --- */
@@ -81,7 +114,13 @@ body {
 }
 
 .hamburger {
+  background-image: url(/images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 1.7rem;
   cursor: pointer;
+  transition: .2s;
+  transition-delay: .1s;
 }
 
 .logo {
@@ -90,13 +129,52 @@ body {
 }
 
 .menu {
-  background-color: white;
-  padding: 2rem 1rem; 
+  background-color: var(--white);
+  border-radius: 0 10rem 10rem 0;
+  padding: 3.2rem 1rem; 
   position: absolute;
-  top: -100%;
-  right: 0;
-  left: 0;
+  top: 0;
+  left: -100%;
+  transition: left .3s, border-radius .5s;
+  width: 100%;
 }
+
+.menu.open {
+  left: 0;
+  border-radius: 0 ;
+
+}
+
+
+.hamburger.open {
+  background-image: url(/images/icon-close.svg);
+  z-index: 1;
+}
+
+@media screen and ( min-width: 1440px ) {
+  .logo img {
+    width: 10rem;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .menu {
+    background: transparent;
+    top: 0;
+    left: 15rem;
+  }
+
+  .nav__list {
+    width: fit-content;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
 
 /* ---  List  --- */
 
@@ -114,6 +192,12 @@ body {
   margin: 0 1rem;
 }
 
+@media screen and ( min-width: 1440px ) {
+  .list__item a {
+    color: var(--white);
+  }
+}
+
 /* --- Slider --- */
 
 .slider {
@@ -122,19 +206,10 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-
 }
 
-
-.slider__track-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
 
 .slider__track {
-  width: 100%;
-  height: 100%;
   transition: transform 300ms;
 }
 
@@ -142,6 +217,19 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
+}
+
+@media screen and (min-width: 400px ) {
+
+}
+
+@media screen and ( min-width: 1440px ) {
+  .sliders__holder {
+    display: grid;    
+    grid-template-columns: 840px auto;
+    height: 534px;
+  }
+
 }
 
 /* --- Buttons --- */
@@ -168,6 +256,22 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+@media screen and ( min-width: 1440px ) {
+
+  .slider__buttons {
+    transform: translateX(100%);
+  }
+
+
+  .btn {
+    padding: 2rem 4rem
+  }
+
+  .btn img {
+    width: 1.2rem;
+  }
+}
+
 /* --- block-slider --- */
 
 .block-slider__container {
@@ -177,7 +281,6 @@ body {
 
 .block-slider__track {
   position: relative;
-  height: 100%;
   transition: transform 350ms;
   transition-timing-function: cubic-bezier(1,.27,0,1.26);
   transition-delay: 80ms;
@@ -185,14 +288,45 @@ body {
 
 .block-slider__slide {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100%;
   width: 100%;
+  padding: 5rem 3rem;
+}
+
+@media screen and ( min-width: 1440px ) {
+  .block-slider__slide {
+    padding: 6rem 8rem 3rem;
+  }
+
+  .block-slider__container {
+    height: 100%;
+  }
+}
+
+/* --- Block About --- */
+
+.image-about img {
+  width: 100%;
+}
+
+.about {
+  padding: 5rem 3rem 2rem;
+}
+
+@media screen and ( min-width: 1440px ) {
+  .block-about {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 
 /* --- Attribution --- */
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

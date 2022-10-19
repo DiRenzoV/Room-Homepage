@@ -30,64 +30,66 @@
     <title>Frontend Mentor | Room homepage</title>
   </head>
   <body>
-    <div class="hero">
-      <div class="slider">
-        <div class="nav">
-          <div class="hamburger">
-            <img src="/images/icon-hamburger.svg" alt="" />
-          </div>
-          <div class="logo">
-            <img src="/images/logo.svg" alt="" />
-          </div>
-          <div class="menu">
-            <ul class="nav__list">
-              <li class="list__item"><a href="#">Home</a></li>
-              <li class="list__item"><a href="#">Shop</a></li>
-              <li class="list__item"><a href="#">About</a></li>
-              <li class="list__item"><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="slider__track-container">
-          <div class="slider__track">
-            <div class="slide current-slide">
-              <picture>
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="/images/desktop-image-hero-1.jpg"
-                />
-                <img
-                  class="slider-image"
-                  src="/images/mobile-image-hero-1.jpg"
-                  alt=""
-                />
-              </picture>
+    <div class="sliders__holder">
+      <div class="hero">
+        <div class="slider">
+          <div class="nav">
+            <div class="hamburger"></div>
+            <div class="logo">
+              <img src="/images/logo.svg" alt="" />
             </div>
-            <div class="slide">
-              <picture>
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="/images/desktop-image-hero-2.jpg"
-                />
-                <img
-                  class="slider-image"
-                  src="/images/mobile-image-hero-2.jpg"
-                  alt=""
-                />
-              </picture>
+            <div class="menu">
+              <ul class="nav__list">
+                <li class="list__item"><a href="#">Home</a></li>
+                <li class="list__item"><a href="#">Shop</a></li>
+                <li class="list__item"><a href="#">About</a></li>
+                <li class="list__item"><a href="#">Contact</a></li>
+              </ul>
             </div>
-            <div class="slide">
-              <picture>
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="/images/desktop-image-hero-3.jpg"
-                />
-                <img
-                  class="slider-image"
-                  src="/images/mobile-image-hero-3.jpg"
-                  alt=""
-                />
-              </picture>
+          </div>
+
+          <!-- Slider -->
+          <div class="slider__track-container">
+            <div class="slider__track">
+              <div class="slide current-slide">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="/images/desktop-image-hero-1.jpg"
+                  />
+                  <img
+                    class="slider-image"
+                    src="/images/mobile-image-hero-1.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+              <div class="slide">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="/images/desktop-image-hero-2.jpg"
+                  />
+                  <img
+                    class="slider-image"
+                    src="/images/mobile-image-hero-2.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+              <div class="slide">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="/images/desktop-image-hero-3.jpg"
+                  />
+                  <img
+                    class="slider-image"
+                    src="/images/mobile-image-hero-3.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </div>
@@ -100,69 +102,80 @@
           </button>
         </div>
       </div>
-    </div>
-    <div class="block-slider__container">
-      <div class="block-slider__track" data-block-slider-track>
-        <div class="block-slider__slide current-block-slide" data-block-slide>
-          <h2 class="header">Discover innovative ways to decorate</h2>
-          <p class="body-text">
-            We provide unmatched quality, comfort, and style for property owners
-            across the country. Our experts combine form and function in
-            bringing your vision to life. Create a room in your own style with
-            our collection and make your property a reflection of you and what
-            you love.
-          </p>
 
-          <a class="link" href="#">
-            Shop now
-            <img class="arrow" src="/images/icon-arrow.svg" alt="" />
-          </a>
-        </div>
-        <div class="block-slider__slide" data-block-slide>
-          <h2 class="header">We are available all across the globe</h2>
-          <p class="body-text">
-            We are available all across the globe With stores all over the
-            world, it's easy for you to find furniture for your home or place of
-            business. Locally, we’re in most major cities throughout the
-            country. Find the branch nearest you using our store locator. Any
-            questions? Don't hesitate to contact us today.
-          </p>
-
-          <a class="link" href="#">
-            Shop now
-            <img class="arrow" src="/images/icon-arrow.svg" alt="" />
-          </a>
-        </div>
-        <div class="block-slider__slide" data-block-slide>
-          <h2 class="header">Manufactured with the best materials</h2>
-          <p class="body-text">
-            Our modern furniture store provide a high level of quality. Our
-            company has invested in advanced technology to ensure that every
-            product is made as perfect and as consistent as possible. With three
-            decades of experience in this industry, we understand what customers
-            want for their home and office.
-          </p>
-
-          <a class="link" href="#">
-            Shop now
-            <img class="arrow" src="/images/icon-arrow.svg" alt="" />
-          </a>
+      <!-- Block Slider -->
+      <div class="block-slider__container">
+        <div class="block-slider__track" data-block-slider-track>
+          <div class="block-slider__slide current-block-slide" data-block-slide>
+            <h2 class="header">Discover innovative ways to decorate</h2>
+            <p class="body-text">
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form and function
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+            <a class="link" href="#">
+              Shop now
+              <img class="arrow" src="/images/icon-arrow.svg" alt="" />
+            </a>
+          </div>
+          <div class="block-slider__slide" data-block-slide>
+            <h2 class="header">We are available all across the globe</h2>
+            <p class="body-text">
+              We are available all across the globe With stores all over the
+              world, it's easy for you to find furniture for your home or place
+              of business. Locally, we’re in most major cities throughout the
+              country. Find the branch nearest you using our store locator. Any
+              questions? Don't hesitate to contact us today.
+            </p>
+            <a class="link" href="#">
+              Shop now
+              <img class="arrow" src="/images/icon-arrow.svg" alt="" />
+            </a>
+          </div>
+          <div class="block-slider__slide" data-block-slide>
+            <h2 class="header">Manufactured with the best materials</h2>
+            <p class="body-text">
+              Our modern furniture store provide a high level of quality. Our
+              company has invested in advanced technology to ensure that every
+              product is made as perfect and as consistent as possible. With
+              three decades of experience in this industry, we understand what
+              customers want for their home and office.
+            </p>
+            <a class="link" href="#">
+              Shop now
+              <img class="arrow" src="/images/icon-arrow.svg" alt="" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
-
-    About our furniture Our multifunctional collection blends design and
-    function to suit your individual taste. Make each room unique, or pick a
-    cohesive theme that best express your interests and what inspires you. Find
-    the furniture pieces you need, from traditional to contemporary styles or
-    anything in between. Product specialists are available to help you create
-    your dream space.
+    <div class="block-about">
+      <div class="image-about">
+        <img src="/images/image-about-dark.jpg" alt="" />
+      </div>
+      <div class="about">
+        <h3 class="heading">About our furniture</h3>
+        <div class="body-text">
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </div>
+      </div>
+      <div class="image-about">
+        <img src="/images/image-about-light.jpg" alt="" />
+      </div>
+    </div>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Vinicius Di Renzo</a>.
     </div>
   </body>
 </html>

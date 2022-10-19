@@ -1,8 +1,11 @@
 const slider = document.querySelector('.slider')
 const track = document.querySelector('.slider__track')
 const slides = Array.from(track.querySelectorAll('.slide'))
-const prevButton = slider.querySelector('[data-prev-button]')
-const nextButton = slider.querySelector('[data-next-button]')
+const prevButton = document.querySelector('[data-prev-button]')
+const nextButton = document.querySelector('[data-next-button]')
+const hamburger = document.querySelector('.hamburger')
+
+
 
 // block-slider
 
@@ -68,8 +71,13 @@ nextButton.addEventListener('click', e => {
   if (currentIndex === 2) return
 
   moveToSlide(track, currentSlide, nextSlide)  
-  moveToBlock(blockSliderTrack, currentBlockSlide, nextBlock)
-
- 
+  moveToBlock(blockSliderTrack, currentBlockSlide, nextBlock) 
 })
 
+
+hamburger.addEventListener('click', e => {
+  const menu = document.querySelector('.menu');
+
+  menu.classList.toggle('open')
+  hamburger.classList.toggle('open')
+})

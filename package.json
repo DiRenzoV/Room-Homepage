@@ -1,0 +1,23 @@
+{
+  "name": "room-homepage-challenge",
+  "version": "1.0.0",
+  "description": "![Design preview for the Room homepage coding challenge](./design/desktop-preview.jpg)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiRenzoV/Room-Homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiRenzoV/Room-Homepage/issues"
+  },
+  "homepage": "https://github.com/DiRenzoV/Room-Homepage#readme",
+  "dependencies": {
+    "parcel": "^2.7.0"
+  }
+}

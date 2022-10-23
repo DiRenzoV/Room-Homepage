@@ -1,5 +1,5 @@
 const slider = document.querySelector('.slider')
-const track = document.querySelector('.slider__track')
+const track = slider.querySelector('.slider__track')
 const slides = Array.from(track.querySelectorAll('.slide'))
 const prevButton = document.querySelector('[data-prev-button]')
 const nextButton = document.querySelector('[data-next-button]')
@@ -12,7 +12,7 @@ const hamburger = document.querySelector('.hamburger')
 const blockSliderTrack = document.querySelector('[data-block-slider-track]')
 const blockSlides = [...blockSliderTrack.children]
 
-console.log(blockSlides)
+
 
 
 

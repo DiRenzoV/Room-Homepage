@@ -30,11 +30,11 @@
     <title>Frontend Mentor | Room homepage</title>
   </head>
   <body>
-    <main>
-      <div class="sliders__holder">
+    <div class="sliders__holder">
+      <header>
         <div class="hero">
           <div class="slider">
-            <div class="nav">
+            <nav class="nav">
               <div class="hamburger"></div>
               <div class="logo">
                 <a href=""><img src="/images/logo.svg" alt="company logo" /></a>
@@ -47,7 +47,7 @@
                   <li class="list__item"><a href="#">Contact</a></li>
                 </ul>
               </div>
-            </div>
+            </nav>
             <!-- Slider -->
             <div class="slider__track-container">
               <div class="slider__track">
@@ -102,14 +102,16 @@
             </button>
           </div>
         </div>
-        <!-- Block Slider -->
+      </header>
+      <!-- Block Slider -->
+      <main>
         <div class="block-slider__container">
           <div class="block-slider__track" data-block-slider-track>
             <div
               class="block-slider__slide current-block-slide"
               data-block-slide
             >
-              <h2 class="header">Discover innovative ways to decorate</h2>
+              <h1 class="header">Discover innovative ways to decorate</h1>
               <p class="body-text">
                 We provide unmatched quality, comfort, and style for property
                 owners across the country. Our experts combine form and function
@@ -153,8 +155,9 @@
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
+
     <section class="block-about">
       <div class="image-about">
         <img src="/images/image-about-dark.jpg" alt="image of furniture" />
@@ -175,11 +178,11 @@
       </div>
     </section>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Vinicius Di Renzo</a>.
-    </div>
+    </footer>
   </body>
 </html>

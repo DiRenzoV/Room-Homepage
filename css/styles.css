@@ -68,7 +68,11 @@ body {
   transform: translateX(10px);
 }
 
-
+*:focus {
+  outline: 3px solid var(--black);
+  outline-offset: 6px;
+  border-radius: 3px;
+}
 
 
 @media screen and ( min-width: 1440px ) {
